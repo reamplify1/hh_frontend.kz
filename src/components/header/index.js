@@ -2,14 +2,20 @@
 // import logo from '../../app/images/hh_logo.png'
 import searchIcon from '../../app/images/icon-search.svg'
 import Image from 'next/image'
+import Link from 'next/link';
 export default function Header() {
     return(
         <header className="header">
             <div className="container">
                 <div className="header-inner">
                     <div>
-                        <img src="/images/hh_logo.png" alt='logo'/>
-                        <a>Работодателям</a>
+                        <Link href="/">
+                            <img src="/images/hh_logo.png" alt='logo'/>
+                        </Link>
+                        <a>Помощь</a>
+                        {/* <a>Работодателям</a> */}
+                        
+                        <Link href="/resumes">Мои резюме</Link>
                         <a>Помощь</a>
                     </div>
                     <div>
@@ -17,12 +23,12 @@ export default function Header() {
                             <Image src={searchIcon}/>
                             Поиск
                         </button>
-                        <button className="header-button  header-button-green">
+                        <Link href="/create-resume" className="header-button  header-button-green">
                             Создать резюме
-                        </button>
-                        <button className="header-button">
+                        </Link>
+                        <Link className="header-button" href="/login">
                             Войти
-                        </button>
+                        </Link>
                     </div>
                 </div>
 

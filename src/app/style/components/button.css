@@ -24,3 +24,12 @@
 .button-primary-bordered:hover{
     opacity: 0.9;
 }
+
+.button-secondary-bordered{
+    border: 1px solid #BCBEBF;
+    color: #303233;
+    background-color: #FAFAFA;
+}
+.button-secondary-bordered:hover{
+    opacity: 0.9;
+}

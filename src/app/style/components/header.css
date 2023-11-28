@@ -23,6 +23,7 @@
     color: #fff;
     margin: 0 10px;
     cursor: pointer;
+    text-decoration: none;
 
 }
 .header-search{
@@ -50,7 +51,7 @@
     margin: 0 10px;
     cursor: pointer;
 }
-.header-button-green{
+a.header-button-green{
     border: 1px solid rgba(162, 218, 165, .5);
     color: #a3daa5;
 

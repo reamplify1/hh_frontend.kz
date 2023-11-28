@@ -3,6 +3,42 @@
     border-radius: 4px;
     padding: 0 20px;
     width: 100%;
-    border: 1px solid #1785E5;
+    border: 1px solid #ddd;
     outline: none;
 }
+.input:focus{
+    border: 1px solid #1785E5;
+}
+.textarea{
+    height: 200px;
+    border-radius: 4px;
+    padding: 0 20px;
+    width: 100%;
+    border: 1px solid #ddd;
+    outline: none;
+    resize: none;
+    padding-top: 10px;
+
+}
+.autocomplete{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+
+    /* display: inline-block;  */
+    /* чтобы блок не растягивался на всю ширину */
+
+}
+.tags{
+    display: flex;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+.tag{
+    padding: 5px;
+    border-radius: 4px;
+    background-color: #ECEFF0;
+    display: inline-block;
+    margin-left: auto;
+}
+

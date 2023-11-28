@@ -24,8 +24,19 @@ export default function UserLogin() {
                 <form>
                     <input className="input" placeholder="Введите код"/>
                     <p>Повторить можно через 00:48</p>
-                    <button className="button button-primary">Продолжить</button>
+                    <button className="button button-primary" onClick={()=>setStep(3)}>Продолжить</button>
                     <button className="button button-primary-bordered" onClick={()=>setStep(1)}>Назад</button>
+                </form>
+           </div>}
+
+           {step === 3 && <div className="card">
+                <h1>Давайте познакомимся</h1>
+                <form>
+                    <input className="input" placeholder="Имя"/>
+                    <input className="input" placeholder="Фамилия"/>
+                    <p>Повторить можно через 00:48</p>
+                    <button className="button button-primary">Продолжить</button>
+                    <button className="button button-primary-bordered" onClick={()=>setStep(2)}>Назад</button>
                 </form>
            </div>}
         </section>
