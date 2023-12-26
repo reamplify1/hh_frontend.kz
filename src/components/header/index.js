@@ -25,7 +25,7 @@ export default function Header() {
                     </div>
                     <div>
                         <button className="header-search">
-                            <Image src={searchIcon}/>
+                            <Image src={searchIcon} alt='icon'/>
                             Поиск
                         </button>
                         <Link href="/create-resume" className="header-button  header-button-green">
